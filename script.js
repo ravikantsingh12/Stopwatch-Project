@@ -1,6 +1,6 @@
 // Code: to run the stopwatch
 
-// Assigning the initial values of milliseconds, seconds, minutes and hours by using an array
+// for assigning the initial values of milliseconds, seconds, minutes and hours by using an array
 let [millisec, sec, min, hrs] = [0, 0, 0, 0];
 
 // selecting the displayTime and storing it in local variable
@@ -11,18 +11,14 @@ let timer = null;
 
 // function for the StopWatch
 function stopWatch(){
-    // increase milliseconds by 10 after each encounter
     millisec += 10;
     if(millisec == 1000){ 
-        //when milliseconds reaches to 1000 change it to 00 and increase the secondsby 1
         millisec = 00;
         sec++;
         if(sec == 60){ 
-            //when seconds reaches to 60, change it to 0 and increase minutes by 1
             sec = 0;
             min++;
             if(min == 60){ 
-                //when minutes reaches to 60, change it to 0 and increase hours by 1
                 min = 0;
                 hrs++;
             }
